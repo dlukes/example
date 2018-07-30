@@ -1,0 +1,14 @@
+/* modify footer class */
+.footer { 
+    background: #000;
+    color: #fff;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+ }
+
+/* modify jumbotron class */
+.jumbotron {
+    margin-bottom: 0px !important;
+}
