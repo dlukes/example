@@ -1,5 +1,5 @@
 (function() {
-    
+
 ////////////////////////////////////////////
 // CONFIGURE THESE TO MATCH YOUR USE CASE //
 ////////////////////////////////////////////
@@ -12,9 +12,8 @@
 // END CONFIGURATION //
 ///////////////////////
 
-    var embeddedApp = document.getElementById("embedded-app");
-
     function resizeIframe(pixels) {
+        var embeddedApp = document.getElementById("embedded-app");
         embeddedApp.style.height = pixels + "px";
     }
 
@@ -36,7 +35,8 @@
 
     // send message to iframe on window resize
     window.onresize = function() {
+        var embeddedApp = document.getElementById("embedded-app");
         embeddedApp.contentWindow.postMessage("parentWindowResized", "*");
     };
-    
+
 })();
